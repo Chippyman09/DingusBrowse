@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#080d19">
+  <meta name="description" content="DingusBrowse is a simple, privacy-conscious browser start page.">
+  <title>DingusBrowse — your browsing start page</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="DingusBrowse home">
+        <span class="brand-mark">D</span>
+        <span>Dingus<span class="brand-light">Browse</span></span>
+      </a>
+      <span class="status"><i></i> Privacy-conscious start page</span>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow"><span></span> SIMPLE. CLEAR. YOURS.</div>
+      <h1>A calmer place<br><em>to start browsing.</em></h1>
+      <p class="intro">Enter a website address and open it directly in a new tab. DingusBrowse does not relay your connection or keep a browsing-history list.</p>
+
+      <form id="address-form" class="address" autocomplete="off">
+        <span class="globe" aria-hidden="true">◎</span>
+        <label class="sr-only" for="address">Website address</label>
+        <input id="address" name="address" type="text" inputmode="url" placeholder="Enter a website address…" spellcheck="false" required>
+        <button type="submit">Open site <span aria-hidden="true">↗</span></button>
+      </form>
+      <p class="hint">Example: example.com · Only HTTP and HTTPS website addresses are opened.</p>
+    </section>
+
+    <section class="cards" aria-label="Privacy information">
+      <article class="card">
+        <div class="card-heading">
+          <div><div class="eyebrow">TRANSPARENCY</div><h2>What this page does</h2></div>
+          <span class="symbol">◇</span>
+        </div>
+        <div class="status-row"><span><b class="dot good"></b> Analytics scripts</span><strong>Not included</strong></div>
+        <div class="status-row"><span><b class="dot good"></b> DingusBrowse history</span><strong>Not stored</strong></div>
+        <div class="status-row"><span><b class="dot good"></b> Proxying your traffic</span><strong>No</strong></div>
+        <p class="notice">This is a start page, not a proxy or VPN. Your browser connects directly to the websites you open. Your browser, network provider, and those websites may still process connection data.</p>
+      </article>
+
+      <article class="card second-card">
+        <div class="eyebrow">QUICK PRIVACY TIPS</div>
+        <h2>Keep control of your data</h2>
+        <ul class="tips">
+          <li>Use HTTPS websites whenever possible.</li>
+          <li>Review your browser's privacy and cookie settings.</li>
+          <li>Don't enter passwords on pages you don't trust.</li>
+          <li>Remember that private browsing does not make you anonymous.</li>
+        </ul>
+        <p class="small">DingusBrowse does not change Chrome's network settings or hide your IP address.</p>
+      </article>
+    </section>
+
+    <footer>
+      <span>© DingusBrowse</span>
+      <span>Privacy claims should be clear and honest.</span>
+    </footer>
+  </main>
+</body>
+</html>
